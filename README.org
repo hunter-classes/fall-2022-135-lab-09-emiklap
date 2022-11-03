@@ -1,0 +1,67 @@
+* Fall 2022 - Lab 09
+
+* Last name:
+
+* First name:
+
+* GitHub username:
+
+* Notes:
+
+
+
+* General instructions:
+- Fill in your name and GitHub username on top.
+- Use the Notes section to add any notes to the instructor.
+- The main lab description can be found here:
+  https://maryash.github.io/135/labs/lab_09.html 
+
+
+*Note:* This lab will require doctest based tests.
+
+* Tasks A-C
+
+The code for Coord3D: 
+
+#+begin_src c++
+  #pragma once
+  class Coord3D {
+  public:
+      double x;
+      double y;
+      double z;
+  };
+#+end_src
+
+should be in a file named *coord3d.h* and should be included in the
+files that use it. You include local files using quotes instead of
+angle brackets. So, if you're in a file *funcs.h* and it uses the
+Coord3D class you'd have this at the top: 
+
+#+begin_src c++
+
+// there could be other includes here
+#include "coord3d.h"
+
+// rest of funcs.h here
+
+#+end_src
+
+
+For task A, in addition to main printing out a Coord3D also put a test
+in tests.cpp to test similarly. 
+
+For tasks B and C, add the functions to *funcs.cpp* and *funcs.h*, run
+from main and create doctest based tests in tests.cpp.
+
+* Task D
+
+complete this task as specified in the main lab. Don't incorporate it
+into your main, Makefile, or tests.
+
+* Task E
+
+Add these functions to funcs.h  / funcs.cpp. Run from main and test
+from tests.cpp. 
+
+

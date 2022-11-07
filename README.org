@@ -1,10 +1,10 @@
 * Fall 2022 - Lab 09
 
-* Last name:
+* Last name: Klapper
 
-* First name:
+* First name: Emily
 
-* GitHub username:
+* GitHub username: emiklap
 
 * Notes:
 

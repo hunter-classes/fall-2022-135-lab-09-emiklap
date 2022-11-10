@@ -10,7 +10,7 @@ int main()
 
   std::cout << "Distance from origin: " << length(&pointP) << std::endl; // would print 37.4166, rounded version of 37.416574
   bool t = fabs(length(&pointP) - 37.416574 ) < 0.000001; //the difference is smaller than 1 millionth
-  std::cout << t << " " << fabs(length(&pointP) - 37.416574 );
+  std::cout << "is the diffence less than 1 millionth? " << t << "\nThe differece: " << abs(length(&pointP) - 37.416574 );
 
   std::cout << "\n\n---------------------------------------------\n\n" << &pointP << " "; // << pointP2 << "\n";
   Coord3D * test = fartherFromOrigin(&pointP, &pointP2);

@@ -1,4 +1,5 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include <math.h>
 #include "doctest.h"
 #include "funcs.h"
 
@@ -8,12 +9,12 @@ Coord3D point2 = {100000, 200000, 300000};
 Coord3D point3 = {777, 444, 333};
 Coord3D vel1 = {1, -5, 7.5};
 
-// add your tests here
+//for these tests, i had to accomidate for rounding differences
 TEST_CASE("TASK A") {
     CHECK(length(&point0) == 0);
-    CHECK(length(&point1) == 37.416574);
-    CHECK(length(&point2) == 374165.73867);
-    CHECK(length(&point3) == 954.858105 );
+    CHECK(abs(length(&point1) - 37.416574) <  0.00001);
+    CHECK(abs(length(&point2) - 374165.73867) <  0.00001);
+    CHECK(abs(length(&point3) - 954.858105) <  0.00001);
 }
 
 TEST_CASE("TASK B") {

@@ -7,6 +7,7 @@
 * GitHub username: emiklap
 
 * Notes:
+- I accidently uploaded the 'tests' executable file and now when I remove it I cannot git push or pull. I am not sure how to fix this. Sorry for the trouble.
 
 
 

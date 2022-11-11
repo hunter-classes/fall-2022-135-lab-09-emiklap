@@ -34,3 +34,20 @@ TEST_CASE("TASK C") {
     CHECK(point3.y == 416.5);
     CHECK(point3.z == 374.25);
 }
+
+//Max's comments helped me with this part
+TEST_CASE("TASK E:") {
+    Coord3D ref = {10, 11, 12};
+    Coord3D *correct = &ref;
+    Coord3D *point4;
+    point4 = createCoord3D(10, 11, 12);
+    CHECK(point4 -> x == 10);
+    CHECK(point4 -> y == 11);
+    CHECK(point4 -> z == 12);
+
+    CHECK(*point4 == *correct);
+
+    deleteCoord3D(point4);
+
+    CHECK(!(*point4 == *correct));
+}

@@ -7,7 +7,6 @@ tests: tests.o funcs.o
 poem: poem.o
 	g++ -o poem poem.o
 
-
 funcs.o: funcs.cpp funcs.h
 
 main.o: main.cpp funcs.h

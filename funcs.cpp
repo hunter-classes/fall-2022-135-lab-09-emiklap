@@ -36,9 +36,21 @@ void move(Coord3D *ppos, Coord3D *pvel, double dt) {
     ppos -> x = point_x;
     ppos -> y = point_y;
     ppos -> z = point_z;
+}
 
-    /*x' = x + vel.x * dt;
-    y' = y + vel.x * dt;
-    z' = z + vel.x * dt; */
+Coord3D* createCoord3D(double x, double y, double z) {
+    Coord3D point = {x, y, z};
+    Coord3D *p = new Coord3D;
+
+    p -> x = point.x;
+    p -> y = point.y;
+    p -> z = point.z;
+
+    return p;
+}
+
+void deleteCoord3D(Coord3D *p){
+    delete p;
+    p = nullptr;
 
 }
